@@ -1,0 +1,1 @@
+# diff-register.nvim
