@@ -5,6 +5,12 @@ function my_plugin.hello()
 
     local register_content = vim.fn.getreg('')
     vim.api.nvim_put({register_content}, 'l', true, true)
+
+    vim.api.nvim_command('vsplit | enew')
+
+    local register_content = vim.fn.getreg('1')
+    vim.api.nvim_put({register_content}, 'l', true, true)
+
 end
 
 return my_plugin
